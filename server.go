@@ -26,7 +26,7 @@ type ServerError struct {
 	Error string `json:"error"`
 }
 
-var addr = flag.String("addr", "0.0.0.0:8080", "http address")
+var addr = flag.String("addr", "127.0.0.1:8080", "http address")
 
 var upgrader = websocket.Upgrader{
 	CheckOrigin: func(r *http.Request) bool { return true },
